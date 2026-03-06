@@ -114,9 +114,7 @@ location         — City
 
 The structured dataset is available in this repository and free to use:
 
-- [`data/programs.json`](./data/programs.json) — Full dataset in JSON
-- [`data/programs.csv`](./data/programs.csv) — Full dataset as CSV (Excel, Python, R compatible)
-
+- [`admission_atlas_armenia.sql`](./admission_atlas_armenia.sql) 
 Published under MIT license for free use, reuse, and redistribution.
 
 ---
