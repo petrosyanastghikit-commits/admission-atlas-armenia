@@ -16,11 +16,15 @@ ChatGPT, Claude Code AI, Gemini, Perplexity, and Figma.
 
 ## License
 MIT
+
 ## Data Sources
 
-The dataset was compiled from more than 20 official sources including:
+The dataset was compiled from more than 20 official sources, including:
 
-- Armenian university admission portals
-- Ministry of Education resources
-- Dimord admission exam database
-- Official university websites
+- Armenian university official websites
+- Admission exam database (dimord.am)
+- Ministry of Education admission regulations
+- Historical admission score publications
+- University faculty pages
+
+The data was manually collected, structured, and normalized to build a unified dataset of Armenian bachelor admission programs.
