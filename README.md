@@ -149,7 +149,7 @@ Greater transparency in Armenia's higher education system benefits everyone. A u
 
 - Data for 2026 is partially complete pending official Ministry publication
 - Private universities are underrepresented due to inconsistent data publishing
-- Mobile experience is planned for improvement
+- User experience is planned for improvement
 - Future version will include automated data updates each admissions cycle
 
 ---
