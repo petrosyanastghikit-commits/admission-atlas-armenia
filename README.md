@@ -65,7 +65,7 @@ This is not a limitation — it is the point.
 - Accelerated iteration on visualization design
 - Enabled a non-programmer to ship a working platform in 4 days
 
-> This project demonstrates what the Dateno.io prize was designed to recognize: AI tools enabling domain experts — not just developers — to create meaningful open data infrastructure. The barrier between "person who understands the problem" and "person who can build the solution" has collapsed.
+> This project demonstrates AI tools enabling domain experts — not just developers — to create meaningful open data infrastructure. The barrier between "person who understands the problem" and "person who can build the solution" has collapsed.
 
 ---
 
