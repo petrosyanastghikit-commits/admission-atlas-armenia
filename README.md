@@ -86,7 +86,7 @@ Data was manually collected and normalized from **more than 20 official sources*
 ### Process
 
 1. **Identification** — Catalogued all bachelor-level programs across accredited Armenian universities
-2. **Extraction** — Manually retrieved admission data; many sources published only as PDFs or unstructured HTML, all transcribed and verified
+2. **Extraction** — Manually retrieved admission data; many sources published only as PDFs, Words or unstructured HTML, all transcribed and verified
 3. **Normalization** — Unified inconsistent field naming, score scales, and program categories across institutions into one schema
 4. **Validation** — Cross-referenced data across multiple sources to catch discrepancies
 5. **Structuring** — Organized into a unified dataset with consistent fields
