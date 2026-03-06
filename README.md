@@ -134,6 +134,20 @@ admission-atlas-armenia/
 
 ---
 
+## Long-Term Vision
+
+While the current version demonstrates core functionality, the long-term vision is to develop Admission Atlas into a **national-level digital infrastructure tool** — one that can be adopted and supported institutionally rather than maintained as a solo volunteer project.
+
+The platform has the potential to serve not only applicants and parents, but also:
+- **Policymakers** monitoring trends in program demand, regional access disparities, and the competitiveness of state-funded places
+- **Researchers** studying mobility, equity, and outcomes in Armenian higher education
+- **Educational institutions** benchmarking their programs and understanding their position within the national landscape
+- **Journalists and civil society** holding the system accountable through data-driven reporting
+
+Greater transparency in Armenia's higher education system benefits everyone — and a unified, maintained, open data layer is a prerequisite for that transparency. This project is a first step toward building that layer.
+
+---
+
 ## Limitations & Future Work
 
 - Data for 2026 is partially complete pending official Ministry publication
