@@ -160,8 +160,7 @@ Greater transparency in Armenia's higher education system benefits everyone. A u
 admission-atlas-armenia/
 ├── index.html          # Main interactive visualization interface
 ├── data/
-│   ├── programs.json   # Structured dataset (JSON)
-│   └── programs.csv    # Structured dataset (CSV)
+│   ├── admission_atlas_armenia.sql   # admission_atlas_armenia (SQL)
 ├── README.md           # Project documentation
 └── LICENSE             # MIT license
 ```
