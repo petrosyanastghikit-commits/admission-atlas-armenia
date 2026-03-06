@@ -1,7 +1,7 @@
 # Admission Atlas — Armenia 2026
 
 **Armenia's first unified, open-data platform for bachelor's degree admissions.**  
-*Built entirely with AI assistance in 4 days by a non-programmer domain expert.*
+*Built entirely with AI assistance in 4 days by a non-programmer UI/UX Designer.*
 
 🔗 **Live Demo:** https://animated-crepe-3ba47e.netlify.app/  
 📄 **Submitted to:** [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)  
