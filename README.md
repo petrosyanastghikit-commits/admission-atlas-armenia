@@ -1,22 +1,25 @@
 # Admission Atlas — Armenia 2026
 
-**Armenia's first unified, open-data platform for bachelor's degree admissions.**
+**Armenia's first unified, open-data platform for bachelor's degree admissions.**  
+*Built entirely with AI assistance in 4 days by a non-programmer domain expert.*
 
-🔗 **Live Demo:** https://animated-crepe-3ba47e.netlify.app/
+🔗 **Live Demo:** https://animated-crepe-3ba47e.netlify.app/  
+📄 **Submitted to:** [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)  
+🏆 **Primary category:** Dateno.io Special Prize — AI-powered open data & interactive visualization
 
 ---
 
 ## The Problem
 
-Every year, approximately **40,000–45,000 Armenian high school graduates** go through the bachelor's admissions process — one of the most consequential decisions of their lives.
+Every year, approximately **40,000–45,000 Armenian high school graduates** face one of the most consequential decisions of their lives — choosing a university and program — with no unified source of information.
 
-Yet the data they need to make informed choices is scattered across:
+Admission data is scattered across:
 - 20+ individual university websites with inconsistent formatting
 - Ministry of Education PDF publications
 - Historical score archives on dimord.am with no unified interface
 - Faculty-specific pages that change annually without notice
 
-The result: students and families spend dozens of hours manually cross-referencing sources, often making decisions based on incomplete or outdated information. First-generation students, and those outside Yerevan, are disproportionately affected — they have less access to informal networks that compensate for this information gap.
+Students and families spend many of hours manually cross-referencing sources, often making decisions based on incomplete or outdated information. First-generation students and those outside Yerevan are disproportionately affected — they have less access to the informal networks that compensate for this data gap.
 
 **No unified, structured, interactive resource existed. This project builds it.**
 
@@ -24,99 +27,132 @@ The result: students and families spend dozens of hours manually cross-referenci
 
 ## What This Project Does
 
-Admission Atlas aggregates, normalizes, and visualizes bachelor admission data from Armenian universities into a single interactive interface. It allows users to:
+Admission Atlas aggregates, normalizes, and visualizes bachelor admission data from Armenian universities into a single interactive platform. It allows users to:
 
 - **Compare programs** across universities by admission score thresholds
 - **Explore trends** in required scores over multiple years
 - **Filter by field of study**, university, or score range
-- **Understand the landscape** of Armenian higher education at a glance
+- **Understand the full landscape** of Armenian higher education at a glance
+
+---
+
+## How This Was Built — The AI-First Methodology
+
+This project was built **entirely through AI-assisted development over 4 days**, by an expertise in UI/UX Design,  but no programming background.
+
+This is not a limitation — it is the point.
+
+### AI Tools Used
+
+| Tool | Role in the Project |
+|---|---|
+| **Claude Code** | Primary development — generated the entire interactive visualization interface |
+| **ChatGPT** | Data structuring assistance, schema design, content drafting |
+| **Gemini** | Cross-referencing and validation of collected data |
+| **Perplexity** | Research and source discovery across Armenian university sources |
+
+### What the Author Contributed
+- Identified the problem and defined the user need
+- Collected and manually verified data across 20+ official sources
+- Made all visualization and UX design decisions (prototyped in Figma)
+- Defined the data schema and normalization rules
+- Directed AI tools through every stage of development
+- Validated all outputs against real admissions data
+
+### What AI Contributed
+- Generated all front-end code (HTML, CSS, JavaScript)
+- Assisted in structuring raw data into a unified schema
+- Accelerated iteration on visualization design
+- Enabled a non-programmer to ship a working platform in 4 days
+
+> This project demonstrates what the Dateno.io prize was designed to recognize: AI tools enabling domain experts — not just developers — to create meaningful open data infrastructure. The barrier between "person who understands the problem" and "person who can build the solution" has collapsed.
 
 ---
 
 ## Data Collection & Methodology
 
 ### Sources
-Data was manually collected and normalized from **more than 20 official sources**, including:
+
+Data was manually collected and normalized from **more than 20 official sources**:
 
 | Source | Type | Data Extracted |
 |---|---|---|
 | Armenian university official websites | Web | Programs, faculties, tuition, contacts |
 | dimord.am | Web (exam database) | Applicant scores, rankings, thresholds |
-| Ministry of Education admission regulations | PDF/Official | Rules, quota numbers, eligibility criteria |
+| Ministry of Education regulations | PDF / Official | Rules, quota numbers, eligibility criteria |
 | Historical score publications | PDF archive | Admission scores 2021–2024 |
 | University faculty pages | Web | Program-level details |
 
-### Data Collection Process
+### Process
 
-1. **Identification** — Catalogued all bachelor-level programs across accredited Armenian universities.
-2. **Extraction** — Manually retrieved admission data from each source. Many sources published data only as PDFs or unstructured HTML tables; all were manually transcribed and verified.
-3. **Normalization** — Unified inconsistent field naming, score scales, and program categorizations across institutions into a single schema.
-4. **Validation** — Cross-referenced data across multiple sources where possible to catch discrepancies.
-5. **Structuring** — Organized into a unified dataset with consistent fields: university, faculty, program, year, minimum score, maximum score, quota, tuition status.
+1. **Identification** — Catalogued all bachelor-level programs across accredited Armenian universities
+2. **Extraction** — Manually retrieved admission data; many sources published only as PDFs or unstructured HTML, all transcribed and verified
+3. **Normalization** — Unified inconsistent field naming, score scales, and program categories across institutions into one schema
+4. **Validation** — Cross-referenced data across multiple sources to catch discrepancies
+5. **Structuring** — Organized into a unified dataset with consistent fields
 
 ### Data Schema
 
-Each record in the dataset represents one admission program-year and contains:
+Each record represents one admission program-year:
 
 ```
-university       — Institution name (Armenian and transliterated)
-faculty          — Faculty or department
+university       — Institution name
+faculty          — Faculty or department  
 program          — Bachelor's program name
 year             — Admission year (2021–2026)
 min_score        — Minimum admitted score
-max_score        — Maximum admitted score (top applicant)
+max_score        — Maximum admitted score
 quota            — Number of state-funded places
 tuition_places   — Number of paid places
-field            — Broad field of study (normalized category)
+field            — Normalized field of study category
 location         — City
 ```
 
 ---
 
-## Visualization Decisions
-
-The platform uses interactive visualizations rather than static tables because admission data has a critical time dimension — scores shift year to year, and patterns matter as much as individual data points.
-
-Key design choices:
-- **Score range charts** over multiple years reveal which programs are becoming more or less competitive
-- **Filtering by field** lets users meaningfully narrow from 500+ programs to relevant options
-- **Comparative view** allows side-by-side program comparison — a workflow that previously required opening 10+ browser tabs
-
----
-
-## Why This Matters for Open Data in Armenia
-
-This project demonstrates that valuable open data doesn't only come from government APIs or sensors — it can be liberated from fragmented, hard-to-use official sources through systematic collection and structuring.
-
-The dataset built for this project is itself a public good. By publishing it openly under MIT license, we enable:
-- Researchers to analyze trends in Armenian higher education
-- Journalists to report on shifts in program competitiveness
-- Future developers to build on top of this foundation
-- Policymakers to see which programs attract applicants and which struggle
-
----
-
-## Technical Implementation
-
-- **Frontend:** Single-page interactive application (HTML/CSS/JavaScript)
-- **Visualization:** Chart.js / D3-based interactive components
-- **Data format:** Structured JSON embedded and available as standalone CSV
-- **Design & Prototyping:** Figma
-- **Deployment:** Netlify (continuous deployment from GitHub)
-- **AI Tools Used:** Claude Code, ChatGPT, Gemini, Perplexity (for development assistance and research)
-
-> Note on AI tools: AI assistants were used to accelerate development. All data collection, normalization, validation, and visualization design decisions were made by the author. The dataset itself — the core value of this project — was built through manual research across 20+ sources.
-
----
-
 ## Dataset
 
-The structured dataset is available in this repository:
+The structured dataset is available in this repository and free to use:
 
-- [`data/programs.json`](./data/programs.json) — Full dataset in JSON format
-- [`data/programs.csv`](./data/programs.csv) — Same dataset as CSV for easy use in Excel, Python, R, etc.
+- [`data/programs.json`](./data/programs.json) — Full dataset in JSON
+- [`data/programs.csv`](./data/programs.csv) — Full dataset as CSV (Excel, Python, R compatible)
 
-The dataset covers **Armenian bachelor admission programs for 2021–2026** and is published under the MIT license for free use, reuse, and redistribution.
+Published under MIT license for free use, reuse, and redistribution.
+
+---
+
+## Visualization Decisions
+
+Interactive visualizations were chosen over static tables because admission data has a critical **time dimension** — scores shift year to year, and patterns matter as much as individual data points.
+
+Key design choices:
+- **Score range charts over multiple years** reveal which programs are becoming more or less competitive
+- **Field-of-study filtering** narrows 500+ programs to what's relevant for each user
+- **Comparative view** enables side-by-side program comparison — a workflow that previously required opening 10+ browser tabs
+
+---
+
+## Long-Term Vision
+
+While the current version demonstrates core functionality, the long-term vision is to develop Admission Atlas into a **national-level digital infrastructure tool** — one that can be adopted and supported institutionally.
+
+The platform has the potential to serve:
+- **Applicants and parents** — making informed, data-driven university decisions
+- **Policymakers** — monitoring trends in program demand, regional access disparities, and state-funded quota allocation
+- **Researchers** — studying mobility, equity, and outcomes in Armenian higher education
+- **Educational institutions** — benchmarking programs within the national landscape
+- **Journalists and civil society** — holding the system accountable through data-driven reporting
+
+Greater transparency in Armenia's higher education system benefits everyone. A unified, maintained, open data layer is a prerequisite for that transparency. This project is a first step toward building it.
+
+---
+
+## Limitations & Future Work
+
+- Data for 2026 is partially complete pending official Ministry publication
+- Private universities are underrepresented due to inconsistent data publishing
+- Mobile experience is planned for improvement
+- Future version will include automated data updates each admissions cycle
 
 ---
 
@@ -126,40 +162,17 @@ The dataset covers **Armenian bachelor admission programs for 2021–2026** and 
 admission-atlas-armenia/
 ├── index.html          # Main interactive visualization interface
 ├── data/
-│   ├── programs.json   # Full structured dataset (JSON)
-│   └── programs.csv    # Full structured dataset (CSV)
-├── README.md           # This document
-└── LICENSE             # MIT open-source license
+│   ├── programs.json   # Structured dataset (JSON)
+│   └── programs.csv    # Structured dataset (CSV)
+├── README.md           # Project documentation
+└── LICENSE             # MIT license
 ```
-
----
-
-## Long-Term Vision
-
-While the current version demonstrates core functionality, the long-term vision is to develop Admission Atlas into a **national-level digital infrastructure tool** — one that can be adopted and supported institutionally rather than maintained as a solo volunteer project.
-
-The platform has the potential to serve not only applicants and parents, but also:
-- **Policymakers** monitoring trends in program demand, regional access disparities, and the competitiveness of state-funded places
-- **Researchers** studying mobility, equity, and outcomes in Armenian higher education
-- **Educational institutions** benchmarking their programs and understanding their position within the national landscape
-- **Journalists and civil society** holding the system accountable through data-driven reporting
-
-Greater transparency in Armenia's higher education system benefits everyone — and a unified, maintained, open data layer is a prerequisite for that transparency. This project is a first step toward building that layer.
-
----
-
-## Limitations & Future Work
-
-- Data for 2026 is partially complete pending official Ministry publication
-- Private universities are underrepresented due to less consistent data publishing
-- Mobile experience could be improved
-- A planned future version will include real-time scraping so the dataset updates automatically each admissions cycle
 
 ---
 
 ## Author
 
-**Astghik Petrosyan**
+**Astghik Petrosyan**  
 Built for the [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)
 
 ---
@@ -172,4 +185,4 @@ MIT — free to use, share, and build upon.
 
 ## Acknowledgements
 
-Data sourced from Armenian university official websites, dimord.am, Ministry of Education of the Republic of Armenia, and historical admission publications. This project is independent and not affiliated with any university or government body.
+Data sourced from Armenian university official websites, dimord.am, and the Ministry of Education of the Republic of Armenia. This project is independent and not affiliated with any university or government body.
