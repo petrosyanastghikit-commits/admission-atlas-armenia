@@ -7,6 +7,9 @@ The platform aggregates data from more than 20 official sources and presents the
 ## Demo
 https://animated-crepe-3ba47e.netlify.app/
 
+## Author
+Astghik Petrosyan
+
 ## Technologies
 This project was developed with AI-assisted tools including:
 ChatGPT, Claude Code AI, Gemini, Perplexity, and Figma.
