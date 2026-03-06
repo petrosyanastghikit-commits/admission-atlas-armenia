@@ -13,3 +13,11 @@ ChatGPT, Claude Code AI, Gemini, Perplexity, and Figma.
 
 ## License
 MIT
+## Data Sources
+
+The dataset was compiled from more than 20 official sources including:
+
+- Armenian university admission portals
+- Ministry of Education resources
+- Dimord admission exam database
+- Official university websites
