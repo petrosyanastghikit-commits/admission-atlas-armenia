@@ -10,18 +10,15 @@ The platform aggregates data from more than 20 official sources and presents the
 
 ## Project Structure
 
-index.html — main interactive visualization interface
-
-README.md — project documentation
-
-LICENSE — MIT open-source license
+- index.html — main interactive visualization interface
+- README.md — project documentation
+- LICENSE — MIT open-source license
 
 ## Author
 Astghik Petrosyan
 
 ## Tools and Technologies
 
-- HTML / JavaScript
 - Data Visualization libraries
 - Figma (design and prototyping)
 - Claude Code AI
