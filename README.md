@@ -5,7 +5,8 @@
 
 🔗 **Live Demo:** https://animated-crepe-3ba47e.netlify.app/  
 📄 **Submitted to:** [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)  
-🏆 **Primary category:** AI-powered open data & interactive visualization
+🏆 **Primary category:** Special prize by Dateno.io - AI-powered open data & interactive visualization
+
 ---
 
 ## The Problem
