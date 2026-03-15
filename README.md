@@ -1,10 +1,12 @@
-# Admission Atlas — Armenia 2026
+![Award](https://img.shields.io/badge/🥈_2nd_Place-Open_Data_Armenia_Contest_2026-silver?style=for-the-badge)
 
 **Armenia's first unified, open-data platform for bachelor's degree admissions.**  
-*Built entirely with AI assistance in 4 days by a non-programmer UI/UX Designer.*
+*Built entirely with AI assistance by a non-programmer UI/UX Designer.*
 
 🔗 **Live Demo:** https://animated-crepe-3ba47e.netlify.app/  
-📄 **Submitted to:** [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)  
+
+
+🥈 2nd Place — "Data Representation and Visualization", Open Data Armenia Contest 2026
 
 ---
 
@@ -167,9 +169,10 @@ admission-atlas-armenia/
 ---
 
 ## Author
-
 **Astghik Petrosyan**  
-Built for the [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)
+🥈 2nd Place in "Data Representation and Visualization" — [Open Data Armenia Contest 2026](https://contest.opendata.am/en/2026)  
+Presented at Open Data Day Armenia, March 13, 2026
+
 
 ---
 
